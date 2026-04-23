@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swifties: Out of the woods media</title>
+     <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <style>
+   
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
+        
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, bg-black);
+        }
+        
+        .hover-lift {
+            transition: all 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .text-glow {
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+        
+        .album-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-inter">
+
+    
+    
+    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="font-playfair text-2xl font-bold text-pink-500">Out Of The Woods Media</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-300 hover:text-pink-400 transition-colors">Home</a>
+                    <a href="#albums" class="text-gray-300 hover:text-pink-400 transition-colors">Albums</a>
+                    <a href="#tour" class="text-gray-300 hover:text-pink-400 transition-colors">The Eras Tour</a>
+                    <a href="#community" class="text-gray-300 hover:text-pink-400 transition-colors">Community</a>
+                    <a href="#shop" class="text-gray-300 hover:text-pink-400 transition-colors">Shop</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button class="bg-pink-600 hover:bg-pink-700 px-4 py-2 rounded-full text-sm font-medium transition-colors">
+                        Join Swifties
+                    </button>
+                    <button class="md:hidden">
+                        <i data-feather="menu" class="text-gray-300"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative min-h-screen flex items-center justify-center gradient-bg">
+        <div id="vanta-bg" class="absolute inset-0"></div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <h1 class="font-playfair text-5xl md:text-7xl font-bold mb-6 text-glow">
+                Welcome to <span class="text-pink-300">Out Of The Woods Media</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto">
+                And now you know the life of a showgirl.
+                Official TS Social Team
+            </p>
+            <p>Rashi Mayur Achaliya. Roll no:- 34. Web Techmnology Activity 1. Given Date:- 08/10.25. Submission Date:- 15/10/25s</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-black px-8 py-4 rounded-full font-semibold hover-lift text-lg">
+                    Explore The Eras
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover-lift text-lg">
+                    Join Community
+                </button>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="albums" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold mb-4">Taylor's Albums</h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">Journey through every era of Taylor's musical evolution</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="album-card rounded-2xl p-6 hover-lift">
+                    <div><image src="./Screenshot 2025-10-14 181149.png"></image></div>
+                    <h3 class="font-playfair text-2xl font-bold mb-2">Taylor Swift</h3>
+                    <p class="text-gray-400 mb-4">You belong with swiftie.</p>
+                    <button class="text-pink-400 hover:text-pink-300 flex items-center gap-2">
+                        Listen Now <i data-feather="play" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+                <div class="album-card rounded-2xl p-6 hover-lift">
+                    <div><image src="Screenshot 2025-10-14 181451.png"></image></div>
+                    <h3 class="font-playfair text-2xl font-bold mb-2">Fearless</h3>
+                    <p class="text-gray-400 mb-4">It's a love story baby just say yes.</p>
+                    <button class="text-pink-400 hover:text-pink-300 flex items-center gap-2">
+                        Listen Now <i data-feather="play" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+                <div class="album-card rounded-2xl p-6 hover-lift">
+                    <div><image src="Screenshot 2025-10-14 181605.png"></image></div>
+                    <h3 class="font-playfair text-2xl font-bold mb-2">Speak Now Taylor's Version</h3>
+                    <p class="text-gray-400 mb-4">Captivated by you, like a firework show</p>
+                    <button class="text-pink-400 hover:text-pink-300 flex items-center gap-2">
+                        Listen Now <i data-feather="play" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+                <div class="album-card rounded-2xl p-6 hover-lift">
+                    <div><image src="Screenshot 2025-10-14 181844.png"></image></div>
+                    <h3 class="font-playfair text-2xl font-bold mb-2">Reputation</h3>
+                    <p class="text-gray-400 mb-4">You Know it's delicate.Are you Ready for it..?</p>
+                    <button class="text-pink-400 hover:text-pink-300 flex items-center gap-2">
+                        Listen Now <i data-feather="play" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+                <div class="album-card rounded-2xl p-6 hover-lift">
+                    <div><image src="Screenshot 2025-10-14 182158.png"></image></div>
+                    <h3 class="font-playfair text-2xl font-bold mb-2">Lover</h3>
+                    <p class="text-gray-400 mb-4">Meet me in the Afterglow</p>
+                    <button class="text-pink-400 hover:text-pink-300 flex items-center gap-2">
+                        Listen Now <i data-feather="play" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+                <div class="album-card rounded-2xl p-6 hover-lift">
+                    <div><image src="Screenshot 2025-10-14 182438.png"></image></div>
+                    <h3 class="font-playfair text-2xl font-bold mb-2">Evermore</h3>
+                    <p class="text-gray-400 mb-4">Champagne Problems.Checkmate I couldn't lose</p>
+                    <button class="text-pink-400 hover:text-pink-300 flex items-center gap-2">
+                        Listen Now <i data-feather="play" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+                <div class="album-card rounded-2xl p-6 hover-lift">
+                    <div><image src="Screenshot 2025-10-14 182658.png"></image></div>
+                    <h3 class="font-playfair text-2xl font-bold mb-2">The Tortured Poets Department</h3>
+                    <p class="text-gray-400 mb-4">I'm So depressed I act like it's my Birthday!</p>
+                    <button class="text-pink-400 hover:text-pink-300 flex items-center gap-2">
+                        Listen Now <i data-feather="play" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+                <div class="album-card rounded-2xl p-6 hover-lift">
+                    <div><image src="Screenshot 2025-10-14 182853.png"></image></div>
+                    <h3 class="font-playfair text-2xl font-bold mb-2">The Life of a Showgirl.</h3>
+                    <p class="text-gray-400 mb-4">And now you know the life of a showgirl.</p>
+                    <button class="text-pink-400 hover:text-pink-300 flex items-center gap-2">
+                        Listen Now <i data-feather="play" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+                <div class="album-card rounded-2xl p-6 hover-lift">
+                    <div><image src="Screenshot 2025-10-14 002502.png"></image></div>
+                    <h3 class="font-playfair text-2xl font-bold mb-2">Midnights</h3>
+                    <p class="text-gray-400 mb-4">13 sleepless nights scattered throughout my life</p>
+                    <button class="text-pink-400 hover:text-pink-300 flex items-center gap-2">
+                        Listen Now <i data-feather="play" class="w-4 h-4"></i>
+                    </button>
+                </div>
+                
+                <div class="album-card rounded-2xl p-6 hover-lift">
+                    <div><image src ="Screenshot 2025-10-14 004817.png"></image></div>
+                    <h3 class="font-playfair text-2xl font-bold mb-2">Red (Taylor's Version)</h3>
+                    <p class="text-gray-400 mb-4">The best thing that has ever been ours is finally home.</p>
+                    <button class="text-pink-400 hover:text-pink-300 flex items-center gap-2">
+                        Listen Now <i data-feather="play" class="w-4 h-4"></i>
+                    </button>
+                </div>
+                
+                <div class="album-card rounded-2xl p-6 hover-lift">
+                    <div> <image src="Screenshot 2025-10-14 005534.png"></image> </div>
+                    <h3 class="font-playfair text-2xl font-bold mb-2">1989 (Taylor's Version)</h3>
+                    <p class="text-gray-400 mb-4">The pop masterpiece reclaimed</p>
+                    <button class="text-pink-400 hover:text-pink-300 flex items-center gap-2">
+                        Listen Now <i data-feather="play" class="w-4 h-4"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="tour" class="py-20 bg-black relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-900/20 to-pink-900/20"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold mb-4">The Eras Tour</h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">Experience the cultural phenomenon that's taking over the world</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl p-1 mb-8 hover-lift">
+                        <div class="bg-black rounded-xl p-8">
+                            <h3 class="font-playfair text-3xl font-bold mb-4">Tour Highlights</h3>
+                            <ul class="space-y-3 text-gray-300">
+                                <li class="flex items-center gap-3">
+                                    <i data-feather="star" class="w-5 h-5 text-yellow-400"></i>
+                                    <span>44 songs across 10 eras</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i data-feather="music" class="w-5 h-5 text-green-400"></i>
+                                    <span>Surprise acoustic songs every night</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i data-feather="clock" class="w-5 h-5 text-blue-400"></i>
+                                    <span>3+ hours of pure magic</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-gray-800 rounded-xl p-4 text-center hover-lift">
+                        <i data-feather="map-pin" class="w-8 h-8 text-pink-400 mx-auto mb-3"></i>
+                        <h4 class="font-semibold mb-2">Global Reach</h4>
+                        <p class="text-gray-400 text-sm">5 continents, endless memories</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-4 text-center hover-lift">
+                        <i data-feather="users" class="w-8 h-8 text-purple-400 mx-auto mb-3"></i>
+                        <h4 class="font-semibold mb-2">Swifties United</h4>
+                        <p class="text-gray-400 text-sm">Friendship bracelets exchange</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-4 text-center hover-lift">
+                        <i data-feather="award" class="w-8 h-8 text-yellow-400 mx-auto mb-3"></i>
+                        <h4 class="font-semibold mb-2">Record Breaking</h4>
+                        <p class="text-gray-400 text-sm">Historic ticket sales</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-4 text-center hover-lift">
+                        <i data-feather="heart" class="w-8 h-8 text-red-400 mx-auto mb-3"></i>
+                        <h4 class="font-semibold mb-2">Magical Moments</h4>
+                        <p class="text-gray-400 text-sm">Unforgettable experiences</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="community" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold mb-4">Swiftie Community</h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">Connect with millions of Swifties around the world</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-gradient-to-br from-pink-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="message-circle" class="w-10 h-10 text-white"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-bold mb-3">Forums & Discussions</h3>
+                    <p class="text-gray-400">Share theories, analyses, and connect with fellow fans</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i data-feather="calendar" class="w-10 h-10 text-white"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-bold mb-3">Events & Meetups</h3>
+                    <p class="text-gray-400">Join local Swiftie gatherings and virtual events</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i data-feather="camera" class="w-10 h-10 text-white"></i>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-bold mb-3">Fan Creations</h3>
+                    <p class="text-gray-400">Showcase your art, covers, and creative projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="bg-black border-t border-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="font-playfair text-2xl font-bold text-pink-500 mb-4">TaylorSwift</h4>
+                    <p class="text-gray-400 text-sm">The official digital home for Taylor Swift fans worldwide</p>
+                </div>
+                
+                <div>
+                    <h5 class="font-semibold mb-4">Quick Links</h5>
+                    <div class="space-y-2 text-sm">
+                        <a href="#" class="text-gray-400 hover:text-white block">Latest News</a>
+                        <a href="#" class="text-gray-400 hover:text-white block">Tour Dates</a>
+                        <a href="#" class="text-gray-400 hover:text-white block">Merchandise</a>
+                    </div>
+                </div>
+                
+                
+                
+                <div>
+                    <h5 class="font-semibold mb-4">Newsletter</h5>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="bg-gray-800 text-white px-4 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-pink-500 flex-1">
+                        <button class="bg-pink-600 hover:bg-pink-700 px-4 py-2 rounded-r-lg">
+                            <i data-feather="send" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Out Of The Woods Media. All rights reserved. This is a fan-made website for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
